@@ -40,13 +40,13 @@ public String getModel(){
 @Override
   public boolean equals(Object o) {
     if (this==o) return true;
-    if (o==null || getClass !=o.getClass()) retyrn false;
+    if (o==null || getClass !=o.getClass()) return false;
     Car car= (Car)o;
     return Objects.equals(id, car.id);
   }
 
 @Override
   public String toString(){
-    return String.format("Car{id='%s', type=%s, licensePlate='%s',brand='%s',model='%s'}", id,type,licenePlate,brand,model);
+    return String.format("Car{id='%s', type=%s, licensePlate='%s',brand='%s',model='%s'}", id,type,licensePlate,brand,model);
   }
 }
